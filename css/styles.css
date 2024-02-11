@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.list {
+    list-style: none;
+    padding: 0;
+}
+.link {
+    text-decoration: none;
+}
+.nav-link {
+    justify-content: center;
+    padding: 8px;
+    display: flex;
+    position: relative;
+    background-color: dimgray;
+    color: black;
+    width: 30px;
+    height: 30vw;
+}
+.nav-link-menu:hover + .submenu,
+.submenu:hover {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    top: 0;
+    left: 30px;
+}
+.submenu {
+    position: absolute;
+    background-color: gray;
+    padding: 10px;
+    display: none;
+    min-width: 500px;
+    width: 50vw;
+}
+.submenu-link {
+    color: black;
+    display: flex;
+}
