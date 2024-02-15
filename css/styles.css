@@ -25,30 +25,32 @@ img {
 }
 .nav-link {
     justify-content: center;
+    align-items: center;
     padding: 8px;
     display: flex;
     position: relative;
     background-color: dimgray;
     color: black;
-    width: 30px;
-    height: 30vw;
+    width: 60px;
+    height: 100vh;
 }
 .nav-link-menu:hover + .submenu,
 .submenu:hover {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 25px;
-    top: 0;
-    left: 30px;
+    transform: translateX(0);
+}
+.nav-link-text {
+    transform: rotate(90deg);
+    flex-shrink: 0;
 }
 .submenu {
     position: absolute;
     background-color: gray;
     padding: 10px;
-    display: none;
+    transform: translateX(-100%);
+    top: 0;
+    left: 0;
+    height: 100vh;
     min-width: 500px;
-    width: 50vw;
 }
 .submenu-link {
     color: black;
