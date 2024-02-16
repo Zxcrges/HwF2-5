@@ -53,6 +53,20 @@ img {
     min-width: 500px;
 }
 .submenu-link {
-    color: black;
+    color: white;
     display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.submenu-link:hover {
+    color: rgb(180, 117, 0);
+}
+.submenu-link::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: rgb(180, 117, 0);
+    transform: rotate(45deg);
 }
